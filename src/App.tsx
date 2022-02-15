@@ -1,12 +1,12 @@
 import { FC } from "react";
 import Header from "./components/Header/Header";
-import Carusel from "./components/Carusel/Carusel";
+import ImageSlider from "./components/Carusel/ImageSlider";
 const App: FC = () => {
   return (
-    <div className="bg-black w-full h-screen">
+    <div className="bg-white w-full h-screen">
       <Header />
       <main className="">
-        <Carusel />
+        <ImageSlider />
       </main>
     </div>
   );

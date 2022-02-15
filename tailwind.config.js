@@ -6,6 +6,11 @@ module.exports = {
   ], 
   theme: { 
     extend: { 
+      backgroundImage: {
+        'orange': "url('https://cdn.discordapp.com/attachments/595285584138731565/942954287720460368/unknown.png')",
+        'blue': "url('https://cdn.discordapp.com/attachments/595285584138731565/942954403948822588/unknown.png')",
+        'orange-2': "url('https://cdn.discordapp.com/attachments/595285584138731565/942954609989779466/unknown.png')",
+      },
       colors:{ 
         primary: "#23252b",
         secondary: "#141519", 

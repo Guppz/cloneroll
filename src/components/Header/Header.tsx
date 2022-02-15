@@ -8,7 +8,7 @@ import Avatar from "../svg/Avatar";
 
 const Header: FC = () => {
   return (
-    <header className="h-[3.75rem] bg-primary w-full text-white flex min-w-[20rem] justify-center fixed right-0 left-0 z-[100]">
+    <header className="h-[3.75rem] bg-primary w-full text-white flex min-w-[20rem] justify-center right-0 left-0 z-[100] sticky">
       <div className="grow-0 shrink-[1] basis-[13.75rem]">
         <Logo />
       </div>
