@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: Lato,Helvetica Neue,helvetica,sans-serif;
-    font-weight: 400;
+* {
+  font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.content-wrapper {
+  --c-content-wrapper-padding-inline: 1.25rem;
+  --content-width: 65.625rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: calc(
+    var(--content-width) + var(--c-content-wrapper-padding-inline) * 2
+  );
+  padding-left: var(--c-content-wrapper-padding-inline);
+  padding-right: var(--c-content-wrapper-padding-inline);
 }
