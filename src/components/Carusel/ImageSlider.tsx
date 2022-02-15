@@ -10,14 +10,14 @@ import "swiper/css/effect-fade";
 import "./ImageSlider.css";
 
 // import required modules
-import { Navigation, EffectFade } from "swiper";
+import { Navigation, EffectFade, Pagination } from "swiper";
 
 const ImageSlider = () => {
   return (
     <>
       <Swiper
         navigation={true}
-        modules={[Navigation, EffectFade]}
+        modules={[Navigation, EffectFade, Pagination]}
         className="mySwiper"
         effect="fade"
       >
