@@ -5,6 +5,7 @@ import SliderManga from "../MangaSlider/SliderManga";
 interface HeadinProps {
   title: string;
   suvText: string;
+  color: boolean;
 }
 
 const ShowContainer: FC<HeadinProps> = (props: HeadinProps) => {
@@ -16,9 +17,9 @@ const ShowContainer: FC<HeadinProps> = (props: HeadinProps) => {
             {props.title}
           </h2>
           <p className="text-white text-4 leading-6 font-medium">
-            "{props.suvText}"
+            {props.suvText}
           </p>
-          <Liner color={true} />
+          <Liner color={props.color} />
         </div>
         {/* <MangaCard
           img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpeg"

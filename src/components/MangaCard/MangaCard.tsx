@@ -8,11 +8,14 @@ interface Src {
 
 const MangaCard: FC<Src> = (props: Src) => {
   return (
-    <div className="min-w-0 px-[calc(1.875rem/2)] snap-start w-[180px] h-[341px]">
-      <div className="">
-        <a href="-"></a>
+    <div className="min-w-0 pr-[calc(1.875rem/2)] snap-start w-[150px] h-[305px] hover:bg-[#23252b]">
+      <div className=" w-[150px] h-[225px]">
+        <a
+          href="-"
+          className="w-[162px] h-[305px] bottom-0 left-0 right-0 top-0 absolute"
+        ></a>
         <img
-          className="blockobject-cover w-[150px] h-[225px] "
+          className="blockobject-cover w-[150px] h-[225px]  "
           src={props.img}
           alt="Hero"
           loading="lazy"
@@ -24,6 +27,14 @@ const MangaCard: FC<Src> = (props: Src) => {
           >
             {props.title}
           </h4>
+          <div className="text-[#a0a0a0] inline-block mt-2 max-w-full overflow-hidden text-ellipsis whitespace-nowrap">
+            <span className=" leading-[1.125rem] text-[0.875rem] font-semibold text-[#2abdbb]">
+              Series
+            </span>{" "}
+            <span className="dot  leading-[1.125rem] text-[0.875rem] font-semibold">
+              Subtitled
+            </span>
+          </div>
         </div>
       </div>
     </div>

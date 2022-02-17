@@ -23,3 +23,16 @@
   overflow-wrap: break-word;
   word-break: break-word;
 }
+
+.dot:before {
+  background-color: #a0a0a0;
+  content: "";
+  display: inline-block;
+  height: 0.25rem;
+  line-height: 1;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 0.25rem;
+}

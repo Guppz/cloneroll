@@ -16,56 +16,48 @@ export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={1}
-        spaceBetween={1}
+        slidesPerView={6}
+        spaceBetween={0}
         pagination={{
           clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 1,
-          },
         }}
         modules={[]}
         className="mySwiper"
       >
         <SwiperSlide>
           <MangaCard
-            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpeg"
-            title="One Piece"
+            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/445f73338ca9b5b74a36903cf54bf00e.jpeg"
+            title="Skull-face Bookseller Honda-san"
           />
         </SwiperSlide>
         <SwiperSlide>
           <MangaCard
-            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpeg"
-            title="One Piece"
+            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/1af14876af87bdfbe42e0220c9e5d002.jpeg"
+            title="New Game!"
           />
         </SwiperSlide>
         <SwiperSlide>
           <MangaCard
-            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpeg"
-            title="One Piece"
+            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/08545f1b41a194c8cf16fdc61a28b758.jpeg"
+            title="GANBARE DOUKICHAN"
           />
         </SwiperSlide>
         <SwiperSlide>
           <MangaCard
-            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpeg"
-            title="One Piece"
+            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/69a6173d531328e01c84e204e830a1ec.jpg"
+            title="Ace Attorney"
           />
         </SwiperSlide>
         <SwiperSlide>
           <MangaCard
-            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpeg"
-            title="One Piece"
+            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/0556286fa01c265341ccb1381475a197.jpeg"
+            title="Working Buddies!"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MangaCard
+            img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/fb4ca5e8af9ed9ccca9db6c62811c2bd.jpg"
+            title="Ojisan and Marshmallow"
           />
         </SwiperSlide>
       </Swiper>

@@ -12,8 +12,9 @@ const App: FC = () => {
         <div className="main-content grid gap-y-[2.5rem]">
           <Hero img="https://static.crunchyroll.com/fms/desktop_large/1050x350/7c8efe6d-980c-468a-8172-93587c549a77.png" />
           <ShowContainer
-            title="Time to CRY"
-            suvText=" Ah, it looks like it started to rain."
+            title="Business Casual"
+            suvText="When you're having fun, you never work a day in your life!"
+            color={false}
           />
         </div>
       </main>
