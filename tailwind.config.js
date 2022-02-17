@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 const colors = require('tailwindcss/colors') 
 module.exports = { 
+  important: false,
   content: [ 
     "./src/**/*.{js,jsx,ts,tsx}", 
   ], 

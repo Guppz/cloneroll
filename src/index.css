@@ -18,3 +18,8 @@
   padding-left: var(--c-content-wrapper-padding-inline);
   padding-right: var(--c-content-wrapper-padding-inline);
 }
+
+.overflow-wrap {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
