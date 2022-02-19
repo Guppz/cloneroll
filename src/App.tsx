@@ -4,6 +4,7 @@ import ImageSlider from "./components/Carusel/ImageSlider";
 import Hero from "./components/Hero/Hero";
 import ShowContainer from "./components/ShowContainer/ShowContainer";
 import News from "./components/News/News";
+
 const App: FC = () => {
   return (
     <div className="bg-black w-full h-full">
