@@ -36,3 +36,31 @@
   transform: translateY(-50%) rotate(45deg);
   width: 0.25rem;
 }
+
+.grid-area {
+  display: grid;
+  column-gap: 1.875rem;
+  grid-template: "top-news latest-news";
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-item-1 {
+  grid-area: top-news;
+  grid-column: span 3;
+}
+.grid-item-2 {
+  grid-area: latest-news;
+  grid-column: span 9;
+}
+
+.grid-top-news {
+  column-gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.line-clamp {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
