@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import ImageSlider from "./components/Carusel/ImageSlider";
 import Hero from "./components/Hero/Hero";
 import ShowContainer from "./components/ShowContainer/ShowContainer";
+import News from "./components/News/News";
 const App: FC = () => {
   return (
     <div className="bg-black w-full h-full">
@@ -16,6 +17,7 @@ const App: FC = () => {
             suvText="When you're having fun, you never work a day in your life!"
             color={false}
           />
+          <News></News>
         </div>
       </main>
     </div>

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 const colors = require('tailwindcss/colors') 
 module.exports = { 
-  important: false,
+  important: true,
   content: [ 
     "./src/**/*.{js,jsx,ts,tsx}", 
   ], 
@@ -11,6 +11,7 @@ module.exports = {
         'orange': "url('https://cdn.discordapp.com/attachments/595285584138731565/942954287720460368/unknown.png')",
         'blue': "url('https://cdn.discordapp.com/attachments/595285584138731565/942954403948822588/unknown.png')",
         'orange-2': "url('https://cdn.discordapp.com/attachments/595285584138731565/942954609989779466/unknown.png')",
+        'news': "url('https://cdn.discordapp.com/attachments/595285584138731565/943916876742930482/unknown.png')",
       },
       colors:{ 
         primary: "#23252b",

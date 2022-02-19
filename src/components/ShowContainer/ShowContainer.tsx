@@ -21,10 +21,6 @@ const ShowContainer: FC<HeadinProps> = (props: HeadinProps) => {
           </p>
           <Liner color={props.color} />
         </div>
-        {/* <MangaCard
-          img="https://beta.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpeg"
-          title="One Piece"
-        /> */}
         <SliderManga />
       </div>
     </div>
