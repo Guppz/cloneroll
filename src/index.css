@@ -58,9 +58,29 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-top-late {
+  grid-column: span 9;
+}
+
 .line-clamp {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.autor-grid {
+  grid-template-areas: "publicationDate author comments";
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  color: #a0a0a0;
+  display: grid;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.autor-grid-1 {
+  grid-area: publicationDate;
+}
+.autor-grid-2 {
+  grid-area: author;
 }
