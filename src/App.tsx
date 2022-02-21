@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import ShowContainer from "./components/ShowContainer/ShowContainer";
 import News from "./components/News/News";
 import ViewAll from "./components/ViewAll/ViewAll";
+import Footer from "./components/Footer/Footer";
 
 const App: FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: FC = () => {
           <ViewAll />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
