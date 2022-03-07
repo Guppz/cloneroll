@@ -1,31 +1,21 @@
 import { FC } from "react";
-import Header from "./components/Header/Header";
-import ImageSlider from "./components/Carusel/ImageSlider";
-import Hero from "./components/Hero/Hero";
-import ShowContainer from "./components/ShowContainer/ShowContainer";
-import News from "./components/News/News";
-import ViewAll from "./components/ViewAll/ViewAll";
-import Footer from "./components/Footer/Footer";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Route/Home";
+import All from "./Route/All";
+import Manga from "./Route/Manga";
+import Chapters from "./Route/Chapter";
 const App: FC = () => {
   return (
-    <div className="bg-black w-full h-full">
-      <Header />
-      <main className="grid gap-y-[3.75rem] content-evenly relative">
-        <ImageSlider />
-        <div className="main-content grid gap-y-[2.5rem]">
-          <Hero img="https://static.crunchyroll.com/fms/desktop_large/1050x350/7c8efe6d-980c-468a-8172-93587c549a77.png" />
-          <ShowContainer
-            title="Business Casual"
-            suvText="When you're having fun, you never work a day in your life!"
-            color={false}
-          />
-          <News />
-          <ViewAll />
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/all" element={<All />} />
+          <Route path="/manga/:id" element={<Manga />} />
+          <Route path="/manga/:id/chapters/:id" element={<Chapters />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

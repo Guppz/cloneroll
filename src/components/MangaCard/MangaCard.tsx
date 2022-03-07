@@ -1,19 +1,23 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 interface Src {
   img: string;
   title: string;
+  manga: any;
+  id: number;
 }
 
 const MangaCard: FC<Src> = (props: Src) => {
   return (
     <div className="min-w-0 pr-[calc(1.875rem/2)] snap-start w-[150px] h-[305px] hover:bg-[#23252b]">
       <div className=" w-[150px] h-[225px]">
-        <a
-          href="-"
+        <Link
+          to={`/manga/${props.id}`}
+          state={{ manga: props.manga, id: props.id }}
           className="w-[162px] h-[305px] bottom-0 left-0 right-0 top-0 absolute"
-        ></a>
+        ></Link>
         <img
           className="blockobject-cover w-[150px] h-[225px]  "
           src={props.img}

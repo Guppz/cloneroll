@@ -1,0 +1,32 @@
+.grid-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "img title title title"
+    "img des des des"
+    "types types types types"
+    "genres genres genres genres";
+}
+
+.img {
+  grid-area: img;
+}
+
+.title {
+  grid-area: title;
+}
+.des {
+  grid-area: des;
+}
+.genres {
+  grid-area: genres;
+  display: flex;
+  justify-content: space-around;
+}
+
+.types {
+  grid-area: types;
+  display: flex;
+  justify-content: space-around;
+}

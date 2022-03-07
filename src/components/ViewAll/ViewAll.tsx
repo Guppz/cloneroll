@@ -1,5 +1,5 @@
 import { FC } from "react";
-
+import { Link } from "react-router-dom";
 const ViewAll: FC = () => {
   return (
     <div className="content-wrapper flex items-center flex-col text-center pt-[0.625rem]">
@@ -13,15 +13,11 @@ const ViewAll: FC = () => {
         <br />
         {"Check out our full library "}
       </h3>
-      <a
-        role="button"
-        className="text-[#f47521] w-auto button"
-        href="/videos/popular"
-      >
+      <Link role="button" className="text-[#f47521] w-auto button" to="/all">
         <span className="text-[0.875rem] leading-5 flex items-center content-center ">
           View all
         </span>
-      </a>
+      </Link>
     </div>
   );
 };
