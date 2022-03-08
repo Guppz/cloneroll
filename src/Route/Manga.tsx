@@ -72,7 +72,7 @@ const Manga: FC = () => {
           </div>
           <Liner color={false} />
           <div className="grid gap-4  sm:grid-cols-2 ">
-            {manga.chapters.map((item: string, index: number) => {
+            {manga.chapters.map((item: any, index: number) => {
               return (
                 <Link
                   to={`/manga/${id}/chapters/${index}`}
@@ -80,9 +80,9 @@ const Manga: FC = () => {
                   state={{ chapter: item }}
                   className="relative bg-primary text-white p-3 rounded-lg text-sm uppercase font-semibold tracking-tight overflow-visible"
                 >
-                  Chapter #{index}
+                  {item.titleChapter}
                   <div className="absolute -top-3 -right-3 px-2.5 py-0.5 bg-[#ef4323] rounded-full text-xs">
-                    {item.length}
+                    {item.chaptersSrc.length}
                   </div>
                 </Link>
               );
