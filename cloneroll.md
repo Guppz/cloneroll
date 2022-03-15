@@ -73,4 +73,5 @@ Poder crear facilmente mi estructura con grid el background color y dale el tama
 
 <img src='https://cdn.discordapp.com/attachments/595285584138731565/953003948489474048/unknown.png'>
 
-<p>Este fue el scrapper que use con cheerio fue mas rapido de crear pero me dio error de conecion mucha veses nunca pudo terminar completo</p>
+<p>Este fue el scrapper que use con cheerio fue mas rapido de crear pero me dio error de conecion mucha veses nunca pudo terminar completo
+</p>
